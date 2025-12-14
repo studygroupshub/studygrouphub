@@ -31,6 +31,25 @@
   </div>
 
 </div>
+  <h2>📚 Student Dashboard</h2>
+
+<select id="subject">
+  <option>Maths</option>
+  <option>Physics</option>
+  <option>Chemistry</option>
+  <option>Computer</option>
+</select>
+
+<input type="text" id="title" placeholder="Note Title">
+<input type="file" id="pdf">
+<button onclick="uploadNote()">Upload Note</button>
+
+<input type="text" id="search" placeholder="Search notes..." onkeyup="searchNotes()">
+
+<ul id="notesList"></ul>
+
+<script type="module" src="js/dashboard.js"></script>
+
 
 <script src="dashboard.js"></script>
 </body>
