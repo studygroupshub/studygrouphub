@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="dash-header">
+  <h2>📚 Student Dashboard</h2>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<!-- MAIN -->
+<div class="container">
+
+  <!-- ADD NOTE -->
+  <div class="card">
+    <h3>➕ Add New Note</h3>
+    <input type="text" id="title" placeholder="Note Title">
+    <textarea id="content" placeholder="Write your note here..."></textarea>
+    <button onclick="addNote()">Save Note</button>
+  </div>
+
+  <!-- NOTES LIST -->
+  <div class="card">
+    <h3>📒 Your Notes</h3>
+    <ul id="notesList"></ul>
+  </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
