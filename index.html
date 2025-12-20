@@ -1,37 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>studygrouphub - Educatinol Platform</title>
-    <!-- CSS & ICON -->
-    <link rel="stylesheet" href="" />
-    <link rel="ICON" href="IMG/LOGO.jpg" />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <!-- Font Awesome -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <!-----JAVA-SCRIPT-->
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    <script defer src="script.js"></script>
-  </head>
-  <body class="bg-gray-100">
-    <!--------NAVIGATION----------->
-    <nav class="bg-white shadow-lg">
-      <div class="max-w-7x1"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK1</title>
+    <!---------------add css-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!---------TAILWIND CSS ADD-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <!---------NAVIGATION ------>
+    <nav x-data="{ mobileMenuOpen: false }" class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="IMG/LOGO.jpg" alt="Study Group Logo" class="h-8 w-8 mr-2">
+                    <span class="text-xl font-bold text-black">STUDY GROUP</span>
+                </div>
 
-       
+                <!---------DESKTOP NAVIGATION ------->
+                  <div class="hidden md:flex items-center space-x-6">
+                    <a href="#" class="text-black hover:text-gray-600 px-3 py-2 flex items-center">
+                        <i class="fas fa-home mr-2"></i> Home
+                    </a>
+                    <a href="#" class="text-black hover:text-gray-600 px-3 py-2 flex items-center">
+                        <i class="fas fa-info-circle mr-2"></i> About
+                    </a>
+                    <a href="#" class="text-black hover:text-gray-600 px-3 py-2 flex items-center">
+                        <i class="fab fa-android mr-2"></i> APK
+                    </a>
+                    <a href="#" class="text-black hover:text-gray-600 px-3 py-2 flex items-center">
+                        <i class="fas fa-envelope mr-2"></i> Contact
+                    </a>
+
+                    <!-----------TEAM DROPDOWN    ------> 
+                     <div class="dropdown">
+    <button class="dropdown-btn">
+        <i class="fas fa-users mr-2"></i> Team
+        <i class="fas fa-chevron-down arrow"></i>
+    </button>
+
+    <div class="dropdown-menu">
+        <a href="#">
+            <i class="fas fa-user-shield"></i> Admin Team
+        </a>
+        <a href="#">
+            <i class="fas fa-code"></i> Developer Team
+        </a>
+    </div>
+</div>
+
+                    
+                   <a href="#" class="text-black hover:text-gray-600 px-3 py-2 flex items-center">
+                        <i class="fas fa-comment-alt mr-2"></i> Feedback
+                    </a>
+                     <!-----------AUTH BUTTON @SRHACKER-->
+                      <div class="flex space-x-4 ml-2">
+                        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 flex items-center">
+                            <i class="fas fa-sign-in-alt mr-2"></i> Login
+                          </a>
+
+                      </div>
+
+                    
+                </div>
+
+                <!------MOBILE MENU BUTTON @srhacker-->
+                <div class="md:hidden flex items-center">
+                    <button @click="mobileMenuOpen = !mobileMenuOpen" class="mobile-menu-button focus:outline-none">
+                        <i class="fas fa-bars text-black text-2xl" x-show="!mobileMenuOpen"></i>
+                        <i class="fas fa-times text-black text-2xl" x-show="mobileMenuOpen"></i>
+                    </button>
+                </div>
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+        <!-------------Mobail menu--------@srhacker-->
+         
+        <div class="md:hidden" x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false" x-transition>
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                    <i class="fas fa-home mr-2 w-5 text-center"></i> Home
+                </a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                    <i class="fas fa-info-circle mr-2 w-5 text-center"></i> About
+                </a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                    <i class="fab fa-android mr-2 w-5 text-center"></i> Download APK
+                </a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                    <i class="fas fa-envelope mr-2 w-5 text-center"></i> Contact Us
+                </a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                    <i class="fas fa-users mr-2 w-5 text-center"></i> Admin Team
+                </a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                    <i class="fas fa-code mr-2 w-5 text-center"></i> Developer Team
+                </a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                    <i class="fas fa-comment-alt mr-2 w-5 text-center"></i> Feedback
+                </a>
+                <div class="pt-4 pb-3 border-t border-gray-200">
+                    <div class="flex flex-col space-y-3 px-2">
+                        <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700">
+                            <i class="fas fa-sign-in-alt mr-2"></i> Login
+                        </a>
+                        <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700">
+                            <i class="fas fa-user-plus mr-2"></i> Sign up
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </nav>
 
-    <!-----------NAVIGATION END-->
-  </body>
+    <!------------------end navigation ----------->
+
+    <script src="JAVA-SCRIPT/script.js"></script>
+</body>
 </html>

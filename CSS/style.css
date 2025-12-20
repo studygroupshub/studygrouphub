@@ -1,0 +1,149 @@
+/*   STYLE FOR STUDY GROUP */
+/*   NAVIGATION STYLE */
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3b82f6;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Category Card */
+.category-card {
+  transition: transform 0.3s ease;
+}
+.category-card:hover {
+  transition: translateY(-5px);
+}
+
+/* SECTION HEADERS */
+section h2 {
+  position: relative;
+  padding-bottom: 8px;
+}
+/* Make logo background transparent */
+
+nav img[alt="Study Group Logo"] {
+  background: transparent !important;
+  border-radius: 40px;
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 180px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.95);
+    transition: all 0.2s ease;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu a:hover {
+    background: #f3f4f6;
+}
+
+/* MAIN MAGIC */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+/* Arrow rotate */
+.dropdown:hover .arrow {
+    transform: rotate(180deg);
+}
+
+/* RESPONSIVE GRIDE ADJUSTMENT */
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* CARD HOVER  EFFECT  */
+.bg-white {
+  transition: all 0.3s ease;
+}
+/* ICON STYLING */
+[class^="fas"] {
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover [class^="fas"] {
+  transform: scale(1.1);
+}
+
+/* MOBAIL MENU ANIMATION */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+  max-height: 1000px; /* Adjust based on your content */
+}
+
+/* FOOTOR STYLE  */
+footer a {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/* RESPONCIVE ADJUSTMENTS */
+@media (max-width: 1024px) {
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-cols-4 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .mobile-menu {
+    padding: 0.5rem 0;
+  }
+}
