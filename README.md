@@ -62,12 +62,14 @@ StudyGroupHub/
 ├── js/
 │   └── script.js       # AI Logic & Interactive features
 └── README.md           # Project Documentation
+```
 
 
-##🚀How to Run Locally
+
+## 🚀How to Run Locally
 Follow these steps to run the project on your local machine:
 
-Clone the Repository
+**Clone the Repository**
 
 Bash
 
@@ -83,12 +85,12 @@ Simply double-click index.html.
 
 OR use Live Server in VS Code for the best experience.
 
-👥 Our Team
+## 👥 Our Team
 Developer Team: Responsible for Frontend architecture, UI/UX design, and AI integration.
 
 Admin Team: Manages educational content, live updates, and student queries.
 
-📜 Disclaimer
+## 📜 Disclaimer
 This project is created for educational purposes. The content provided within the platform mockups is for demonstration of the user interface and functionality.
 
 📞 Contact Us
@@ -98,7 +100,7 @@ Email: help@studygroup.com
 
 Address: 123 Education Hub, Knowledge Park, New Delhi, India
 
-🤝 Connect With Me
+## 🤝 Connect With Me
 GitHub: https://github.com/studygroupshub
 
 LinkedIn: Premjeet's Profile
