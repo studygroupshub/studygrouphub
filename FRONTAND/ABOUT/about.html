@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyGroupHub</title>
+    <!--------css add -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-----------TOP BAR----->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <div class="contact-info">
+          <a href="mailto:contact@studygroup.com">
+            <i class="fas fa-envelope"></i>
+            <span class="desktop-text">help@studygrouphub.com</span>
+            <span class="mobile-text">Email Us</span>
+          </a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <!------------NAV ---------->
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-wrapper">
+          <a href="#" class="logo-group">
+            <img
+              src="/FRONTAND/ IMG/LOGO.jpg"
+              alt="Logo"
+              class="logo-img"
+              onerror="this.src='https://via.placeholder.com/48/2563eb/ffffff?text=LOGO'"
+            />
+            <div class="logo-text">
+              <span class="logo-main">STUDY</span>
+              <span class="logo-sub">GROUP</span>
+            </div>
+          </a>
+
+          <div class="desktop-menu">
+            <a href="/FRONTAND/DASHBOARD/index.html" class="nav-link">
+              <i class="fas fa-home"></i> HOME
+            </a>
+
+            <a href="/FRONTAND/DEVLOPER-TEAM/index.html" class="nav-link">
+              <i class="fas fa-code"></i> DEVELOPER TEAM
+            </a>
+            <a href="/FRONTAND/ADMIN-TEAM/index.html" class="nav-link">
+              <i class="fas fa-user-shield"></i> ADMIN TEAM
+            </a>
+            <a href="/FRONTAND/CONTACT/index.html" class="nav-link">
+              <i class="fas fa-address-book"></i> CONTACT
+            </a>
+          </div>
+
+          <button id="mobile-menu-btn" class="hamburger-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <!--------MOBAIL NAVIGATION ---------->
+
+      <div id="mobile-menu" class="mobile-menu-container hidden">
+        <div class="mobile-links">
+          <a href="/FRONTAND/DASHBOARD/index.html" class="mobile-link">
+            <i class="fas fa-home center-icon"></i> HOME
+          </a>
+
+          <a href="/FRONTAND/DEVLOPER-TEAM/index.html" class="mobile-link">
+            <i class="fas fa-code center-icon"></i> DEVELOPER TEAM
+          </a>
+          <a href="/FRONTAND/ADMIN-TEAM/index.html" class="mobile-link">
+            <i class="fas fa-user-shield center-icon"></i> ADMIN TEAM
+          </a>
+          <a href="/FRONTAND/CONTACT/index.html" class="mobile-link">
+            <i class="fas fa-address-book center-icon"></i> CONTACT
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-----------END NAV------->
+
+    <script src="script.js"></script>
+  </body>
+</html>
