@@ -1,3 +1,76 @@
 @import "tailwindcss";
 
 
+/* 1. CUSTOM SCROLLBAR  */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+/* Tailwind slate-500 color match */
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* 2. ANIMATIONS                */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+/* Responsive */
+@media (min-width: 768px) {
+  /* Show desktop navigation */
+  .lg\:flex {
+    display: flex !important;
+  }
+
+  /* Hide mobile menu button */
+  #mobile-menu-btn {
+    display: none;
+  }
+
+  /* Hide mobile menu */
+  #mobile-menu {
+    display: none !important;
+  }
+
+  /* Ensure navigation items are visible and properly spaced */
+  .flex.items-center.space-x-1 {
+    display: flex !important;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: visible;
+  }
+
+  /* Adjust font sizes for better fit */
+  .px-4.py-2 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 0.9rem; /* 12px */
+  }
+
+  /* Make sure login button is properly sized */
+  .px-6.py-2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.75rem; /* 12px */
+  }
+}
