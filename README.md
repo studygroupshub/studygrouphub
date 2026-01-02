@@ -130,7 +130,7 @@ STUDYGROUPHUB/
 ## ✨ Key Features
 
 - 🔐 Secure Login & Registration
-- 📊 Student & Admin Dashboard
+- 📊 Developer Team & Admin-Team
 - 🧑‍🤝‍🧑 Multi-domain Study Community
 - 📚 Exam Preparation Support
 - 💻 Technical Skill Development
