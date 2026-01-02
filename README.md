@@ -50,8 +50,32 @@ To create a *single digital ecosystem* where students can:
 ---
 
 ## 📁 Project Folder Structure
-STUDYGROUPHUB/ ├── BACKEND/ │   ├── API/ │   └── DATABASE/ │ ├── FRONTAND/ │   ├── IMG/ │   ├── ABOUT/ │   ├── ADMIN-TEAM/ │   ├── APK/ │   ├── BTECH/ │   ├── CLASS7TH-8TH/ │   ├── CONTACT/ │   ├── COURSES/ │   ├── DASHBOARD/ │   ├── DEVLOPER-TEAM/ │   ├── DIPLOMA/ │   ├── FEEDBACK/ │   ├── LOGIN/ │   └── STUDYGROUP-COMMUNITY/ │ ├── node_modules/ ├── output.css ├── style.css ├── tailwind.config.js ├── package.json ├── package-lock.json └── README.md
-
+STUDYGROUPHUB/
+├── BACKEND/                  # Server-side logic and database connections
+│   ├── API/                  # REST API endpoints
+│   └── DATABASE/             # Database schemas and migrations
+├── FRONTAND/                 # Client-side code and UI pages
+│   ├── IMG/                  # Static images and assets
+│   ├── ABOUT/                # About Us page files
+│   ├── ADMIN-TEAM/           # Admin management pages
+│   ├── APK/                  # Android application files
+│   ├── BTECH/                # B.Tech study materials
+│   ├── CLASS7TH-8TH/         # School level study materials
+│   ├── CONTACT/              # Contact forms and pages
+│   ├── COURSES/              # Course listing pages
+│   ├── DASHBOARD/            # User/Admin dashboard
+│   ├── DEVLOPER-TEAM/        # Team information pages
+│   ├── DIPLOMA/              # Diploma study resources
+│   ├── FEEDBACK/             # User feedback forms
+│   ├── LOGIN/                # Authentication pages
+│   └── STUDYGROUP-COMMUNITY/ # Community forum or chat files
+├── node_modules/             # Node.js dependencies
+├── output.css                # Compiled CSS file
+├── style.css                 # Main source CSS file
+├── tailwind.config.js        # Tailwind CSS configuration
+├── package.json              # Project metadata and dependencies
+├── package-lock.json         # Dependency tree lock file
+└── README.md                 # Project documentation
 
 
 
