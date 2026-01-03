@@ -124,6 +124,7 @@ STUDYGROUPHUB/
 | *Shivam* | About Page |
 | *Raman* | Study Group Community |
 | *Shenha Rastogi* | Feedback System |
+| *Deepti Prajapati* | Contact-us |
 
 ---
 
