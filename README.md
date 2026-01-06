@@ -117,13 +117,13 @@ STUDYGROUPHUB/
 | *Premjeet* | Dashboard Development |
 | *Surendar* | Dashboard Development |
 | *Sandeep* | Developer Team Module |
-| *Raj Omer* | Admin Panel |
-| *Sidharth Avasthi* | Admin Panel |
+|  | Admin Team |
+| | Admin Team |
 | *Saloni Gupta* | Login & Authentication |
 |  | APK Section |
 | *Shivam* | About Page |
-| *Raman* | Study Group Community |
-|  | Feedback System |
+|  | Study Group Community |
+| *Raman* | Feedback System |
 |  | Contact-us |
 
 ---
