@@ -3,13 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <!---- Icon link ---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---- font link ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <body>
-    <h1>helloworld</h1>
-    <h1>hhh</h1>
-    <h1>hello</h1>
-    <h1>hhh</h1>
-    <h1>hell naman</h1>
+    <div class="header">
+        <i class="fa-sharp-duotone fa-regular fa-book-open-reader"></i>
+        <h3>StuyGroupHub</h3>
+    </div>
+    <div class="par">
+        <h2>We Value Your Opinion</h2>
+        <p><b></b>Help us make StudyGroupHub better for every student. Tell us what study material you need <div>next!</div></p>
+    </div>
+    <div class="box" style="background-color: white;">
+        <div class="input" style="background-color: white;">
+            <div>
+                <label for="Name"><b>Your Name</b></label>             
+                <br>   
+                <input  type="text" placeholder="Student Name" id="Name">
+            </div>
+            <div>
+                <label for="class"><b>Class / Exam Target</b></label>
+                <br>
+                <input type="number" placeholder="e.g,Class 12, JEE, UPSC">
+            </div>
+        </div>
+        <div class="main" style="background-color: white;">
+            <div class="in">
+                  <b>What is this regarding?</b>
+                  <br>
+                  <select name="category">                
+                    <option value="select a Category" selected>Select a Category</option>
+                    <option value="gen">gen</option>
+                    <option value="obc">obc</option>
+                    <option value="sc">sc</option>
+                    <option value="st">st</option>
+                  </select>
+            </div>
+            <div class="center" style="background-color: white;">
+                  <p><b>Rate oue Content Quality</b></p>  
+                  <i class="fa-duotone fa-solid fa-star"></i>
+                  <i class="fa-duotone fa-solid fa-star"></i>
+                  <i class="fa-duotone fa-solid fa-star"></i>
+                  <i class="fa-duotone fa-solid fa-star"></i>
+                  <i class="fa-duotone fa-solid fa-star"></i>
+            </div>  
+            <div class="out" style="background-color: white;">
+                <b>Your Message / Request details</b>
+                <textarea>Please tell us which specific chapter notes you need or. what issue you faced</textarea>
+            </div>        
+            <div class="button">
+                <button type="submit">Submit Feedback <i class="fa-duotone fa-thin fa-paper-plane"></i></button>
+            </div>
+        </div>        
+    </div>
+    <div class="footer">
+        <p>For urgent issues, email us at support@Studygrouphub.com<div>2024 StudyGroupHub All rights reserved</div>
+        </p>
+    </div>
 </body>
 </html>

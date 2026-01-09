@@ -1,0 +1,143 @@
+*{
+    /* background-color: lightblue; */
+    font-family: "Roboto", sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 30px;
+    width: 100%;
+    border:6px solid white;
+}
+
+.header i{
+    margin:5px 0px;
+    padding-right:5px;
+    color:blue;
+    
+}
+
+.header h3{
+    font-size: 15px;
+    margin:5px 0px;
+}
+
+.par{
+    text-align: center;
+}
+
+.par p{
+    margin-top:5px;
+}
+
+.par p,div{
+    font-size: 10px;
+    margin-bottom: 2px;
+    font-weight: 700;
+}
+
+.par h2{
+    margin-bottom:2px;
+    padding-top: 10px;
+    font-weight: 900;
+    font-size: 20px;
+}
+.box{
+    height: 340px;
+    width: 400px;
+    background-color:white !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    padding: 10px;
+    box-shadow: 2px 4px 8px gainsboro;
+    margin:auto;
+    align-self: center;
+    border-radius:10px;
+    position:relative;
+    top:30px;
+    background-color: white in !important;
+}
+
+.input{
+    display: flex;
+    border-radius:10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.main select{
+    width:100%;
+    height:25px;
+    margin:5px 0 0 0;
+}
+
+.out textarea{ 
+    width:390px;
+    height: 70px;
+    font-size:9px;
+    border-radius:5px;
+}
+
+.button button{
+    color:white;
+    background-color: blue;
+    width:100%;
+    height: 30px;
+    font-size: 10px;
+    border-radius:5px;
+}
+
+.center i{
+    color:gray;
+    opacity: 0.3;
+}
+
+.input input{
+    border-radius:5px;
+    margin-top:5px;
+    height:25px;
+    border:1px solid gray;
+}
+
+.input label{
+    font-size: 10px;
+}
+
+.in{
+    padding:10px 0;
+    font-size:10px;
+}
+
+.center p{
+    margin-top:16px;
+    font-size: 10px;
+}
+
+.out {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.center{
+    margin-bottom: 10px;
+}
+
+.out textarea{
+    margin-top: 5px;
+}
+
+.footer{
+    position:absolute;
+    bottom:30px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer p,div{
+    font-weight: 100px;    
+}
